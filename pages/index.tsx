@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import {EditorWrapper} from "../components/editor/editor";
+import Footer from '../components/footer';
 
 export default function Home() {
     return (
@@ -15,9 +16,7 @@ export default function Home() {
                 </h1>
                 <EditorWrapper/>
             </main>
-            <footer className="mt-auto">
-                Created by Order & Chaos
-            </footer>
+            <Footer />
         </div>
     )
 }
