@@ -11,7 +11,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <main className="flex flex-col h-full">
-                <h1 className="text-3xl mb-4 font-bold underline">
+                <h1 className="text-3xl mb-4">
                     Collaborative Editor
                 </h1>
                 <EditorWrapper/>

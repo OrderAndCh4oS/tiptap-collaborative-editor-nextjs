@@ -2,8 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "BallingerMono";
+    src: url("/fonts/WOFF2/BallingerMono-Bold.woff2") format("woff2"),
+    url("/fonts/WOFF/BallingerMono-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BallingerMono";
+    src: url("/fonts/WOFF2/BallingerMono-Regular.woff2") format("woff2"),
+    url("/fonts/WOFF/BallingerMono-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BallingerMono";
+    src: url("/fonts/WOFF2/BallingerMono-Light.woff2") format("woff2"),
+    url("/fonts/WOFF/BallingerMono-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@layer base {
+    html {
+        font-family: 'BallingerMono', monospace;
+        background: linear-gradient(33deg, #1b181c, #2c1b2b);;
+        color: #d2d7cc
+    }
+    input, textarea {
+        background-color: #d2d7cc;
+        color: #1b181c;
+    }
+    input.border, textarea.border {
+        border: 2px solid #d2d7cc;
+    }
+    input:focus, textarea:focus, button:focus {
+        outline: 1px #e70e4f solid;
+    }
+    input.border:focus, textarea.border:focus, button.border:focus {
+        outline: 0;
+        border: 2px solid #e70e4f;
+    }
+    button {
+        padding-bottom: 0.2rem;
+    }
+    button.border {
+        border: 2px solid #d2d7cc;
+    }
+    button.border:hover, button.active {
+        background-color: #2c1b2b;
+        border: 2px solid #e70e4f;
+    }
+    button:focus {
+        outline: 1px #e70e4f solid;
+    }
+}
+
 html, body {
-    height: 100%;
+    min-height: 100%;
 }
 
 #__next {

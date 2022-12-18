@@ -6,7 +6,7 @@ interface IToolbarButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const ToolbarButton: FC<IToolbarButtonProps> = ({isActive, children, className = '', ...rest}) =>
     <button
-        className={`border border-black border-2 rounded px-1 hover:bg-black hover:text-white transition-colors duration-300 ${isActive ? 'bg-black text-white' : 'text-black'} ${className}`}
+        className={`border rounded px-1 transition-colors duration-300 ${isActive ? 'active' : ''} ${className}`}
         {...rest}
     >
         {children}
